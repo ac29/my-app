@@ -15,6 +15,8 @@ export default function App() {
           </div>
         </div>
       </div>
+      <a href="https://github.com/ac29/my-app" target="blank"> Open Source Code </a>
+      <span>by Alham Chelehmalzadeh</span>
     </div>
   );
 }

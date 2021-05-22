@@ -16,7 +16,6 @@ export default function Forecast() {
           <span class="weather-forecast-temperature-min"> {1}° </span>
         </div>
       </div>
-    </div>
-    
+    </div> 
   );
 }
