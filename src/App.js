@@ -1,18 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-import Weather from "./weather.js";
+import "./App.css";
+import Form from "./Form";
+import Current from "./current";
+import Forecast from "./Forecast";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>
-          Hello World
-        </h1>
-        <Weather/>
-      </header>
+      <div className="container">
+        <div className="weather-app-wrapper">
+          <div className="weather-app">
+            <Form />
+            <Current />
+            <Forecast />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
-
-export default App;
