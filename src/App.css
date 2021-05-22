@@ -68,3 +68,8 @@ a {
 .weather-forecast-temperatures {
   font-size: 13px;
 }
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
