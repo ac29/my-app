@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-export default function Form() {
+export default function Form(props) {
   let [city, setCity] = useState(" ");
   let [temperature, setTemperature] = useState({});
   const [loaded, setLoaded] = useState(false);
@@ -12,6 +12,7 @@ export default function Form() {
       temp: Math.round(response.data.main.temp),
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
+      city: response.data.name,
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       description: response.data.weather[0].description
     });
@@ -41,6 +42,7 @@ export default function Form() {
       <div>
         <div className="Form">{form}</div>
         <ul className="WeatherDescription">
+          <li>{city}</li>
           <li>Temperature: {temperature.temp}°C</li>
           <li>Description: {temperature.description}</li>
           <li>Humidity: {temperature.humidity}%</li>
@@ -52,7 +54,13 @@ export default function Form() {
       </div>
     );
   } else {
-    return form;
+    let apiKey = "7dd7f2137e6eaf2096f115b990d86b79";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&units=metric&appid=${apiKey}`;
+    axios.get(apiUrl).then(showTemperature);
+
+    return (
+      "Loading..."
+    )
   }
 }
 
