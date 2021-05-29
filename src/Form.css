@@ -1,3 +1,6 @@
 .WeatherDescription {
   list-style: none;
 }
+.date {
+  text-align: left;
+}
