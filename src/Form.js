@@ -5,7 +5,6 @@ import FormattedDate from "./FormattedDate";
 export default function Form(props) {
   let [city, setCity] = useState(" ");
   let [temperature, setTemperature] = useState({ready:false});
-  const [loaded, setLoaded] = useState(false);
 
   function showTemperature(response) {
     setTemperature({

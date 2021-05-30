@@ -2,5 +2,6 @@
   list-style: none;
 }
 .date {
+  margin: 0 auto;
   text-align: left;
 }
