@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import FormattedDate from "./FormattedDate";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function Form(props) {
   let [city, setCity] = useState(" ");
@@ -45,8 +46,8 @@ export default function Form(props) {
         <div className="Form">{form}</div>
         <ul className="WeatherDescription">
           <li>{city}</li>
-          <li>Temperature: {temperature.temp}°C</li>
-          <li>Description: {temperature.description}</li>
+          <span><WeatherTemperature celsius = {temperature.temp}/></span>
+          <li>{temperature.description}</li>
           <li>Humidity: {temperature.humidity}%</li>
           <li>Wind: {temperature.wind}km/h</li>
           <li>
