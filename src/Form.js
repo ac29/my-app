@@ -56,7 +56,7 @@ export default function Form(props) {
             <img src={temperature.icon} alt={temperature.description} />
           </li>
         </ul>
-        <div> <Forecast coordinates={temperature.coordinates}/></div>
+        <div> <Forecast coordinates = {temperature.coordinates}/></div>
       </div>
     );
   } else {
