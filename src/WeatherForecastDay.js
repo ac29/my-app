@@ -25,9 +25,9 @@ function day () {
           alt=""
           width="36"
         />
-        <div class="weather-forecast-temperatures">
-          <span class="weather-forecast-temperature-max"> {maxTemperature()} </span>
-          <span class="weather-forecast-temperature-min"> {minTemperature()} </span>
+        <div className="weather-forecast-temperatures">
+          <span className="weather-forecast-temperature-max"> {maxTemperature()} </span>
+          <span className="weather-forecast-temperature-min"> {minTemperature()} </span>
         </div>
     </div>
      );

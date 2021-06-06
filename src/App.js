@@ -9,7 +9,6 @@ export default function App() {
         <div className="weather-app-wrapper">
           <div className="weather-app">
             <Form defaultCity = "Toronto"/>
-            
           </div>
         </div>
       </div>
