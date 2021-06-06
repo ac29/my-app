@@ -1,6 +1,5 @@
 import "./App.css";
 import Form from "./Form";
-import Forecast from "./Forecast";
 
 
 export default function App() {
@@ -10,7 +9,7 @@ export default function App() {
         <div className="weather-app-wrapper">
           <div className="weather-app">
             <Form defaultCity = "Toronto"/>
-            <Forecast />
+            
           </div>
         </div>
       </div>

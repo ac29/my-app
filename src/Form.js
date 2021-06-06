@@ -48,7 +48,7 @@ export default function Form(props) {
         <div className="Form">{form}</div>
         <ul className="WeatherDescription">
           <li>{city}</li>
-          <span><WeatherTemperature celsius = {temperature.temp}/></span>
+          <span><WeatherTemperature /></span>
           <li>{temperature.description}</li>
           <li>Humidity: {temperature.humidity}%</li>
           <li>Wind: {temperature.wind}km/h</li>
