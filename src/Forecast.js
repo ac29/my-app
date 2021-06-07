@@ -34,7 +34,7 @@ return (
             })}
           </div>
         </div>
-        </div>
+   </div>
   );
 } else {
   let longitude = props.coordinates.lon;
