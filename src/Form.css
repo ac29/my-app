@@ -1,5 +1,7 @@
 ul {
   list-style: none;
+  color: #2b2b2f;
+  font-size: 16px;
 }
 .date {
   margin: 0 auto;
